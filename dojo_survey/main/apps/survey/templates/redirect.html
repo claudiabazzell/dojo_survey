@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Submitted Info</h2>
+  <p>Name: {{request.session.name}}</p>
+  <p>Dojo Location: {{request.session.location}}</p>
+  <p>Favorite Language: {{request.session.language}}</p>
+  <p>Part-time?:{{request.session.part_time}}</p>
+  <p>Full-time?:{{request.session.full_time}}</p>
+  <p>Comment: {{request.session.comment}}</p>
+   <div>
+     <form action="/" method='GET'>
+       <button type="submit">Go Back</button>
+     </form>
+   </div>
+</body>
+</html>
